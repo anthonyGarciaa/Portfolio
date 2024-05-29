@@ -1,0 +1,442 @@
+/*configuraciones-generales*/
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --font-titleHead: h3_font;
+    --font-nav: nav_font;
+    --light-bg:#ffffffcb;
+    --dark-bg:#313338ff;
+    --bg-color1: rgb(212, 235, 221);
+    --bg-color2: #451093;
+    --color-de-hovers: #e7642eff;
+    --border-radius-infoextra: 10px;
+    --font-color-1: rgb(158, 158, 231);
+    --font-1: font_1;
+    --font-2: font_2;
+    
+}
+body {
+    background-color: var(--dark-bg);
+    transition: background-color .3s;
+}
+
+@font-face {
+    font-family: h3_font;
+    src: url(fonts/Quicksand_Book.otf);
+}
+
+@font-face {
+    font-family: nav_font;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: font_1;
+    src: url(fonts/Roboto-Regular.ttf)
+}
+
+@font-face {
+    font-family: font_2;
+    src: url(fonts/Poppins-Italic.ttf);
+}
+
+
+/*configuraciones-generales-END*/
+/*HEADER*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 10;
+    font-size: 30px;
+    padding: 15px;
+    background-color: var(--bg-color1);
+    width: 100vw;
+}
+
+header h1 {
+    font-family: var(--font-titleHead);
+    font-size: 120%;
+    letter-spacing: 30%;
+    font-weight: 400;
+}
+
+header img {
+    width: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    padding-left: 10%;
+}
+nav a{
+    margin-right: 2%;
+}
+.redes{
+    border-radius: 100%;
+    height: fit-content;
+    margin-right: 8%;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+.redes:hover{
+    background-color: var(--color-de-hovers);
+}
+
+#mode {
+    font-size: 170%;
+    cursor: pointer;
+    transition: font-size .3s;
+    user-select: none;
+}
+
+#mode:hover {
+    font-size: 200%;
+    color: var(--color-de-hovers);
+}
+
+
+#exit_button {
+    color: var(--bg-color2);
+    font-size: 230%;
+    cursor: pointer;
+    transition: color .3s;
+
+}
+
+#exit_button:hover {
+    color: var(--color-de-hovers);
+}
+
+/*HEADER-END*/
+/*Main*/
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+
+}
+
+/*MainEnd*/
+/*FLOAT-LEFT*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    width: 100%;
+    height: max-content;
+    font-family: var(--font-nav);
+    background-color: rgba(177, 243, 243, 0.826);
+    border-bottom-right-radius: 40%;
+
+}
+
+.intro h2 {
+    font-family: var(--font-2);
+    text-align: center;
+    font-size: 350%;
+    width: 50%;
+    margin-bottom: 50px;
+    color: var(--bg-color2);
+    border-bottom: 2px solid var(--bg-color2);
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    
+}
+
+.info img {
+    border-top-right-radius: 100%;
+    margin: 0;
+    width: 20%;
+}
+
+.info_text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: max-content;
+    padding-left: 3%;
+}
+
+.info_text h3 {
+    font-size: 240%;
+    margin-bottom: 10px;
+}
+
+.info_text h4 {
+    font-size: 200%;
+    margin-bottom: 30px;
+}
+
+.info_text p {
+    font-size: 150%;
+    font-family: var(--font-1);
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: var(--h3instyout);
+    font-size: 10px;
+}
+
+.projects h3 {
+    font-family: var(--font-titleHead);
+    font-size: 500%;
+    color: var(--bg-color1);
+}
+.projects h4{
+    margin-top: 4%;
+    font-family: var(--font-2);
+    font-size: 350%;
+    color: var(--bg-color1);
+}
+.projects a{
+    width: 100%;
+    height: fit-content;
+}
+.project{
+    transition: background-color .3s;
+    cursor: pointer;
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-color:#5a16c0e7;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 4px dashed var(--bg-color1);
+}
+.projects div img{
+    transform: translate(-60%,60%);
+    transition: transform .4s;
+    float: left;
+    width: 40%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.description{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:inherit;
+    text-align:center
+}
+.projects div div h5{
+    font-family: var(--font-nav);
+    font-size: 350%;
+    color: var(--bg-color1);
+    font-weight: 100;
+    margin-bottom: 5%;
+}
+.projects div div p{
+    color: var(--light-bg);
+    font-family: var(--font-1);
+    font-size: 190%;
+}
+.project:hover{
+    background-color:#6f25dfe7 ;
+}
+.project:hover > img{
+    transform: translate(0,0);
+}
+
+/*FLOAT-LEFT-END*/
+
+/*Stack*/
+div.my-Stack {
+    background-color: var(--bg-color1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 200%;
+    padding-bottom: 100px;
+}
+
+div.my-Stack h3 {
+    font-family: var(--font-2);
+    color: var(--bg-color2);
+    font-size: 50px;
+}
+
+.stacks-grid {
+    width: 80%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.stacks-grid div {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10%;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--h3instyout);
+    border-bottom: 3px solid rgba(128, 128, 128, 0.629);
+    overflow: hidden; 
+
+}
+
+.Stacks {
+    transform: translateY(100px);
+}
+
+@keyframes aparecer {
+    0% {
+        transform: translateY(150px);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(360deg);
+    }
+}
+
+@keyframes desaparecer {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(170px);
+    }
+}
+@media(max-width:1360px) {
+    header h1 {
+        font-family: var(--font-titleHead);
+        letter-spacing: 80%;
+    }
+    #mode{
+        font-size: 190%;
+    }
+    #mode:hover {
+        font-size: 190%;
+        color: var(--color-de-hovers);
+    }
+    .intro{
+        border-radius: 0px;
+        padding-bottom: 2%;
+    }
+    .intro h2 {
+        font-family: var(--font-2);
+        text-align: center;
+        font-size: 250%;
+        width: 50%;
+    }
+    .info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info img {
+        border-radius: 100%;
+        margin: 0;
+        width: 40%;
+    }
+
+}
+@media(max-width:791px){
+    .intro{
+        margin-top: 169px;
+    }
+}
+
+@media(max-width:814px){
+    .util,.minijuego{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 250px;
+    }
+    .proyects div img{
+        transform: translate(0,0);
+    }
+}
+
+@media(max-width:401px) {
+    header h1 {
+        font-family: var(--font-titleHead);
+        letter-spacing: 10%;
+        font-size: 83%;
+    }
+    #mode{
+        font-size: 140%;  
+    }
+    #mode:hover {
+        font-size: 140%;
+    }
+    #exit_button{
+        font-size: 150%;
+    }
+    header img {
+        width: 40px;
+    }
+    .intro h2{
+        padding-left: 2%;
+        align-self: self-start;
+        text-align: start;
+    }
+}
+@media(max-width:288px){
+    header{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px
+    };
+    header h1{
+        letter-spacing: 8%;
+        font-size: 72%;
+    }
+    .intro{
+        margin-top: 180px;
+    }
+}
+@media(max-width:269px){
+    .intro{
+        margin-top: 189px;
+    }
+}
+/*Stack-End*/
