@@ -146,7 +146,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 6%;
     width: 100%;
     height: max-content;
     font-family: var(--font-nav);
@@ -244,7 +244,7 @@ main {
     margin-bottom: 20px;
     border: 4px dashed var(--bg-color1);
 }
-.projects div img{
+.project img{
     transform: translate(-60%,60%);
     transition: transform .4s;
     float: left;
@@ -260,7 +260,7 @@ main {
     align-items:inherit;
     text-align:center
 }
-.projects div div h5{
+.description h5{
     font-family: var(--font-nav);
     font-size: 350%;
     color: var(--bg-color1);
@@ -358,6 +358,7 @@ div.my-Stack h3 {
         color: var(--color-de-hovers);
     }
     .intro{
+        margin-top: 12%;
         border-radius: 0px;
         padding-bottom: 2%;
     }
@@ -379,24 +380,60 @@ div.my-Stack h3 {
     }
 
 }
+@media(max-width:814px){
+    .project{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 80%;
+        height:400px;
+        padding-bottom: 2%;
+    }
+  
+    .project img{
+        justify-items: start;
+        transform: translate(0,0);
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
 @media(max-width:791px){
     .intro{
-        margin-top: 169px;
+        margin-top: 13%;
+    }
+}
+@media(max-width:733px){
+    .intro{
+        margin-top: 21%;
+    }
+}
+@media(max-width:716px){
+    .intro{
+        margin-top: 24%;
+    }
+}
+@media(max-width:629px){
+    .intro{
+        margin-top: 27%;
+    }
+}
+@media(max-width:562px){
+    .intro{
+        margin-top: 30%;
+    }
+}
+@media(max-width:517px){
+    .intro{
+        margin-top: 34%;
+    }
+}
+@media(max-width:454px){
+    .intro{
+        margin-top: 38%;
     }
 }
 
-@media(max-width:814px){
-    .util,.minijuego{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 250px;
-    }
-    .proyects div img{
-        transform: translate(0,0);
-    }
-}
 
 @media(max-width:401px) {
     header h1 {
@@ -419,9 +456,25 @@ div.my-Stack h3 {
     .intro h2{
         padding-left: 2%;
         align-self: self-start;
+        font-size: 160%;
         text-align: start;
     }
+    .intro h3, .intro .h4{
+        font-size: 140%;
+    }
+    .intro p {
+        font-size: 100%;
+    }
+    .project{
+        height:300px;
+    }
 }
+@media(max-width:307px){
+    .intro{
+        margin-top: 40%;
+    }
+}
+
 @media(max-width:288px){
     header{
         border-bottom-left-radius: 15px;
@@ -432,12 +485,21 @@ div.my-Stack h3 {
         font-size: 72%;
     }
     .intro{
-        margin-top: 180px;
+        margin-top: 38%;
+    }
+    .project{
+        height:250px;
+    }
+}
+@media(max-width:273px){
+    .intro{
+        margin-top: 56%;
     }
 }
 @media(max-width:269px){
     .intro{
-        margin-top: 189px;
+        margin-top: 55%;
     }
 }
 /*Stack-End*/
+
