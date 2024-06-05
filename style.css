@@ -388,6 +388,7 @@ div.my-Stack h3 {
         width: 80%;
         height:400px;
         padding-bottom: 2%;
+        border: 1px solid var(--color-de-hovers);
     }
   
     .project img{
