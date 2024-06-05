@@ -303,7 +303,7 @@ div.my-Stack h3 {
 .stacks-grid {
     width: 80%;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 20px;
 }
